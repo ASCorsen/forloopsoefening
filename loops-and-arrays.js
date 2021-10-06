@@ -4,7 +4,13 @@
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 namen zou bevatten!
 // ==========================================
 
-const names = ["Henk", "Piet", "Fred", "Joop"];
+const names = ["Henk", "Piet", "Fred", "Joop", "Klaas"];
+const diminutive = "je";
+
+// for (let i = 0; i < names.length; i++) {
+//     console.log(names[i]+diminutive)
+// }
+names.forEach(element => console.log(element + diminutive))
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
@@ -20,6 +26,31 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // ==========================================
 
 const numbers = [2, 4, 5, 29, 38];
+for (let i = 0; i < numbers.length; i++) {
+    // let multiSom = numbers[i] *3
+    console.log(numbers[i] *3);
+}
+// numbers.forEach(element => console.log(element*3))
+
+// for(let index = 0; index < numbers.length; index++)
+// {
+//     let multiplier = 3;
+//     let value = numbers[index];
+//     console.log(value * multiplier)
+// }
+// for(let index = 0; ;)
+// {
+//     if (index >= numbers.length)
+//     {
+//         break
+//     }
+//     let multiplier = 3;
+//     let value = numbers[index];
+//     console.log(value * multiplier)
+//     index++;
+// }
+//
+
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
@@ -36,6 +67,11 @@ const numbers = [2, 4, 5, 29, 38];
 // ==========================================
 
 const squares = [30, 2, 8, 24, 11];
+for (let i = 0; i <squares.length ; i++) {
+    console.log(squares[i] * squares[i]* squares[i])
+}
+
+squares.forEach(arrayObject => console.log(arrayObject *arrayObject  * arrayObject))
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
